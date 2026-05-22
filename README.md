@@ -699,8 +699,8 @@ CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
 ### 1. Clone repo
 
 ```bash
-git clone https://github.com/thanhkien2005/Project2.git
-cd Project2
+git clone https://github.com/thanhkien2005/RAG-Agent-Finance.git
+cd RAG-Agent-Finance
 ```
 
 ### 2. Backend (FastAPI + LangGraph)
