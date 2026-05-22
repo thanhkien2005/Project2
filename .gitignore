@@ -1,0 +1,77 @@
+# =====================
+# Environment & secrets
+# =====================
+.env
+.env.*
+!.env.example
+
+# =====================
+# Python
+# =====================
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =====================
+# Node / Next.js
+# =====================
+node_modules/
+.next/
+.vercel/
+dist/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# =====================
+# Project-specific exclusions
+# =====================
+
+# Large source PDFs (copyright + ~190MB)
+data/*.pdf
+
+# Persistent vector DB (~78MB, rebuild from chunks.jsonl via Embedding+ChromaDB.ipynb)
+backend/data/chromadb/
+chromadb/
+
+# HF Spaces deploy mirror (duplicate of backend/, ~164MB)
+hf-space/
+
+# Backup files
+*.bak
+*.bak-*
+chunks.jsonl.bak-*
+
+# Duplicate root chunks.jsonl (canonical copy is at backend/data/chunks.jsonl)
+/chunks.jsonl
+
+# Local test artifacts
+src/body.json
+
+# =====================
+# OS / IDE
+# =====================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =====================
+# Logs
+# =====================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
